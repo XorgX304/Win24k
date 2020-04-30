@@ -1,4 +1,6 @@
-all: build
+.PHONY: main.cs
 
-build:
-	gcc main.c
+all: main.exe
+
+main.exe: main.cs
+	@gmcs main.cs
